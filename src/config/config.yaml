@@ -1,0 +1,44 @@
+# Dataset configuration
+dataset:
+  instances_path: "dataset/"
+  results_path: "results/"
+
+# Instance files
+instances:
+  - "be75eec.mat"
+  - "stabu1.mat"
+  - "t59b11xx.mat"
+  - "t65b11xx.mat"
+  - "t69r11xx.mat"
+  - "t70b11xx.mat"
+  - "t74d11xx.mat"
+  - "t75d11xx.mat"
+  - "tiw56n54.mat"
+  - "tiw56n72.mat"
+
+# EA Parameters
+ea_parameters:
+  population_sizes: [10, 20, 50, 100, 200]
+  max_evaluations: 10000
+  num_runs: 30  # Number of independent runs per configuration
+  random_seed: 42  # Base seed for reproducibility
+
+# Genetic operators parameters
+genetic_operators:
+  mutation_rate: 0.1
+  crossover_rate: 0.9
+  tournament_size: 3
+  elitism: true
+
+# Known optimal values
+known_optima:
+  be75eec: 264940
+  stabu1: 422088
+  t59b11xx: 245750
+  t65b11xx: 411733
+  t69r11xx: 865650
+  t70b11xx: 623411
+  t74d11xx: 673346
+  t75d11xx: 688601
+  tiw56n54: 112767
+  tiw56n72: 462991
